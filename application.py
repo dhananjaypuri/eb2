@@ -149,7 +149,7 @@ def upload():
                 for user in users:
                     emailList.append(user.email);
                 print(emailList);
-                with open(f'userdatafiles\\{fname}', 'r') as readfile:
+                with open(f'userdatafiles/{fname}', 'r') as readfile:
                     data = csv.reader(readfile);
                     next(data);
                     for item in data:
